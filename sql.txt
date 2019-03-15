@@ -1,3 +1,0 @@
-select t.id, t.district,t.town, count(*)  from T_STATIONING_MANAGEMENT t left join T_STATIONING_AGENT m on t.id = m.stationing_management_id 
-where t.district = '2'
-group by t.id ,t.district,t.town,t.phone,t.contacts;
